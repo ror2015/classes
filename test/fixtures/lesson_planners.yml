@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group_name: MyString
+  teacher_name: MyString
+  classroom: MyString
+  start_time: 2015-04-08 20:20:53
+  end_time: 2015-04-08 20:20:53
+
+two:
+  group_name: MyString
+  teacher_name: MyString
+  classroom: MyString
+  start_time: 2015-04-08 20:20:53
+  end_time: 2015-04-08 20:20:53

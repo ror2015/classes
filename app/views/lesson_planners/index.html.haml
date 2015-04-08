@@ -1,0 +1,29 @@
+%h1 Listing lesson_planners
+
+%table
+  %thead
+    %tr
+      %th Group name
+      %th Teacher name
+      %th Classroom
+      %th Start time
+      %th End time
+      %th
+      %th
+      %th
+
+  %tbody
+    - @lesson_planners.each do |lesson_planner|
+      %tr
+        %td= lesson_planner.group_name
+        %td= lesson_planner.teacher_name
+        %td= lesson_planner.classroom
+        %td= lesson_planner.start_time
+        %td= lesson_planner.end_time
+        %td= link_to 'Show', lesson_planner
+        %td= link_to 'Edit', edit_lesson_planner_path(lesson_planner)
+        %td= link_to 'Destroy', lesson_planner, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Lesson planner', new_lesson_planner_path

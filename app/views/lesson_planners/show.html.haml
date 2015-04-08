@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Group name:
+  = @lesson_planner.group_name
+%p
+  %b Teacher name:
+  = @lesson_planner.teacher_name
+%p
+  %b Classroom:
+  = @lesson_planner.classroom
+%p
+  %b Start time:
+  = @lesson_planner.start_time
+%p
+  %b End time:
+  = @lesson_planner.end_time
+
+= link_to 'Edit', edit_lesson_planner_path(@lesson_planner)
+\|
+= link_to 'Back', lesson_planners_path
